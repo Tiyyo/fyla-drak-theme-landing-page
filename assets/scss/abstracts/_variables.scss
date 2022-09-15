@@ -1,0 +1,28 @@
+//--define breakpoints
+$breakpoints:  (
+    'small': (max-width: 480px),
+    'medium': (max-width: 768px),
+    'large': (max-width: 1200px),
+    'extra-large': (min-width: 1201px)
+);
+
+//---Primary colors
+//-- intro and email sign up background
+$Dark-blue-1 : hsl(217, 28%, 15%);
+//--Main background
+$Dark-blue-2 :hsl(218, 28%, 13%);
+//--Footer background
+$Dark-blue-3 : hsl(216, 53%, 9%);
+//---testimonials background
+$dark-blue-4 : hsl(219, 30%, 18%);
+
+//---Accent colors
+//--Inside call to action gradient 
+$cyan : hsl(176, 68%, 64%);
+//--inside call to action gradient
+$blue : hsl(198, 60%, 50%);
+//--error 
+$light-red : hsl (0, 100%, 63%); 
+
+//--Neutral colors 
+$white : hsl( 0, 0%, 100%);

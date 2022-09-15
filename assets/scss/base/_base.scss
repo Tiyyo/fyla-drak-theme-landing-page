@@ -1,0 +1,17 @@
+.attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+
+body{
+    min-height: 100vh;
+    color: $white;
+    background: linear-gradient(180deg, $Dark-blue-1, $Dark-blue-2);
+}
+
+img  {
+  max-width: 100%;
+}
