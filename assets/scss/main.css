@@ -1,8 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap");
-.header {
+.productive, .storage, .collaboration, .security, .acces, .header {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.storage__logo, .collaboration__logo, .security__logo, .acces__logo {
+  height: 75px;
+  width: 75px;
 }
 
 .attribution {
@@ -32,6 +37,11 @@ img {
   list-style: none;
 }
 
+a, a:visited {
+  text-decoration: none;
+  color: none;
+}
+
 body {
   font-family: "Raleway", sans-serif;
   font-size: 62.5%;
@@ -56,12 +66,12 @@ body {
   margin: 15px 0;
 }
 .header__description {
-  padding: 0 25px;
-  margin: 0 0 25px 0;
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
-  font-size: 1rem;
-  line-height: 1.5rem;
+  font-size: 0.8rem;
+  line-height: 1.3rem;
+  padding: 0 25px;
+  margin: 0 0 25px 0;
 }
 .header__button {
   border: 0;
@@ -87,4 +97,131 @@ body {
   flex-grow: 2;
   font-size: 0.7rem;
   font-weight: 400;
+}
+
+.functionality {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 50px 0 0 0;
+  padding: 0 30px;
+}
+
+.acces {
+  display: flex;
+  flex-direction: column;
+}
+.acces__logo {
+  background: url("/assets/images/icon-access-anywhere.svg") center/contain no-repeat;
+  margin: 50px 0 20px 0;
+}
+.acces__title {
+  font-size: 1.2rem;
+  margin: 0 0 10px 0;
+}
+.acces__description {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 0.8rem;
+  line-height: 1.3rem;
+}
+
+.security {
+  display: flex;
+  flex-direction: column;
+}
+.security__logo {
+  background: url("/assets/images/icon-security.svg") center/contain no-repeat;
+  margin: 50px 0 20px 0;
+}
+.security__title {
+  font-size: 1.2rem;
+  margin: 0 0 10px 0;
+}
+.security__description {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 0.8rem;
+  line-height: 1.3rem;
+}
+
+.collaboration {
+  display: flex;
+  flex-direction: column;
+}
+.collaboration__logo {
+  background: url("/assets/images/icon-collaboration.svg") center/contain no-repeat;
+  margin: 50px 0 20px 0;
+}
+.collaboration__title {
+  font-size: 1.2rem;
+  margin: 0 0 10px 0;
+}
+.collaboration__description {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 0.8rem;
+  line-height: 1.3rem;
+}
+
+.storage {
+  display: flex;
+  flex-direction: column;
+}
+.storage__logo {
+  background: url("/assets/images/icon-any-file.svg") center/contain no-repeat;
+  margin: 50px 0 20px 0;
+}
+.storage__title {
+  font-size: 1.2rem;
+  margin: 0 0 10px 0;
+}
+.storage__description {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 0.8rem;
+  line-height: 1.3rem;
+}
+
+.productive {
+  display: flex;
+  flex-direction: column;
+}
+.productive__logo {
+  background: url("/assets/images/illustration-stay-productive.png") center/contain no-repeat;
+  height: 350px;
+  width: 80%;
+}
+.productive__right {
+  padding: 0 30px;
+  text-align: left;
+}
+
+.right__title {
+  font-size: 1.2rem;
+  margin: 0 0 10px 0;
+}
+.right__description {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 0.8rem;
+  line-height: 1.3rem;
+}
+.right__link {
+  position: relative;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 0.8rem;
+  line-height: 1.3rem;
+  color: hsl(176deg, 68%, 64%);
+  border-bottom: 1px solid hsl(176deg, 68%, 64%);
+}
+.right__link::after {
+  content: "";
+  position: absolute;
+  background: url("/assets/images/icon-arrow.svg") center/contain no-repeat;
+  height: 1rem;
+  width: 1rem;
+  right: -18px;
+  top: 50%;
+  transform: translateY(-50%);
 }/*# sourceMappingURL=main.css.map */

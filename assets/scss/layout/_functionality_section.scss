@@ -1,0 +1,81 @@
+.functionality  {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 50px 0 0 0 ;
+    padding : 0 30px;
+}
+.acces  {
+    display: flex;
+    flex-direction: column;
+    @extend %centerFlex;
+
+    &__logo  {
+        background: url('/assets/images/icon-access-anywhere.svg') center/contain no-repeat;
+        @include funcLogo;
+    }
+
+    &__title{
+        @include subTitle;
+    }
+
+    &__description  {
+        @include descriptionTxt;
+    }
+}
+
+.security  {
+    display: flex;
+    flex-direction: column;
+    @extend %centerFlex;
+
+    &__logo  {
+        background: url('/assets/images/icon-security.svg') center/contain no-repeat;
+        @include funcLogo;
+    }
+
+    &__title  {
+        @include subTitle;
+    }
+
+    &__description  {
+        @include descriptionTxt;
+    }
+}
+
+.collaboration  {
+    display: flex;
+    flex-direction: column;
+    @extend %centerFlex;
+
+    &__logo  {
+        background: url('/assets/images/icon-collaboration.svg') center/contain no-repeat;
+        @include funcLogo;
+    }
+
+    &__title  {
+        @include subTitle;
+    }
+
+    &__description  {
+        @include descriptionTxt;
+    }
+}
+
+.storage  {
+    display: flex;
+    flex-direction: column;
+    @extend %centerFlex;
+
+    &__logo  {
+        background: url('/assets/images/icon-any-file.svg') center/contain no-repeat;
+        @include funcLogo;
+    }
+
+    &__title  {
+        @include subTitle;
+    }
+
+    &__description  {
+        @include descriptionTxt;
+    }
+}
