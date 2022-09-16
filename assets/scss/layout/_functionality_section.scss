@@ -10,7 +10,7 @@
     @extend %centerFlex;
 
     &__logo  {
-        background: url('/assets/images/icon-access-anywhere.svg') center/contain no-repeat;
+        background: url('assets/images/icon-access-anywhere.svg') center/contain no-repeat;
         @include funcLogo;
     }
 
@@ -29,7 +29,7 @@
     @extend %centerFlex;
 
     &__logo  {
-        background: url('/assets/images/icon-security.svg') center/contain no-repeat;
+        background: url('assets/images/icon-security.svg') center/contain no-repeat;
         @include funcLogo;
     }
 
@@ -48,7 +48,7 @@
     @extend %centerFlex;
 
     &__logo  {
-        background: url('/assets/images/icon-collaboration.svg') center/contain no-repeat;
+        background: url('assets/images/icon-collaboration.svg') center/contain no-repeat;
         @include funcLogo;
     }
 
@@ -67,7 +67,7 @@
     @extend %centerFlex;
 
     &__logo  {
-        background: url('/assets/images/icon-any-file.svg') center/contain no-repeat;
+        background: url('assets/images/icon-any-file.svg') center/contain no-repeat;
         @include funcLogo;
     }
 

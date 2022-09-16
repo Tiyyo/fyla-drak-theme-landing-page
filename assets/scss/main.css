@@ -111,7 +111,7 @@ body {
   flex-direction: column;
 }
 .acces__logo {
-  background: url("/assets/images/icon-access-anywhere.svg") center/contain no-repeat;
+  background: url("assets/images/icon-access-anywhere.svg") center/contain no-repeat;
   margin: 50px 0 20px 0;
 }
 .acces__title {
@@ -130,7 +130,7 @@ body {
   flex-direction: column;
 }
 .security__logo {
-  background: url("/assets/images/icon-security.svg") center/contain no-repeat;
+  background: url("assets/images/icon-security.svg") center/contain no-repeat;
   margin: 50px 0 20px 0;
 }
 .security__title {
@@ -149,7 +149,7 @@ body {
   flex-direction: column;
 }
 .collaboration__logo {
-  background: url("/assets/images/icon-collaboration.svg") center/contain no-repeat;
+  background: url("assets/images/icon-collaboration.svg") center/contain no-repeat;
   margin: 50px 0 20px 0;
 }
 .collaboration__title {
@@ -168,7 +168,7 @@ body {
   flex-direction: column;
 }
 .storage__logo {
-  background: url("/assets/images/icon-any-file.svg") center/contain no-repeat;
+  background: url("assets/images/icon-any-file.svg") center/contain no-repeat;
   margin: 50px 0 20px 0;
 }
 .storage__title {
@@ -187,7 +187,7 @@ body {
   flex-direction: column;
 }
 .productive__logo {
-  background: url("/assets/images/illustration-stay-productive.png") center/contain no-repeat;
+  background: url("assets/images/illustration-stay-productive.png") center/contain no-repeat;
   height: 350px;
   width: 80%;
 }
@@ -218,7 +218,7 @@ body {
 .right__link::after {
   content: "";
   position: absolute;
-  background: url("/assets/images/icon-arrow.svg") center/contain no-repeat;
+  background: url("assets/images/icon-arrow.svg") center/contain no-repeat;
   height: 1rem;
   width: 1rem;
   right: -18px;
