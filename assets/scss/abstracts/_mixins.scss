@@ -17,3 +17,12 @@
             + 'Please make sure it is defined in `$breakpoints` map.';
     }
 }
+
+@mixin button {
+        border: 0;
+        border-radius: 50px;
+        background-color: $cyan;
+        color: $white;
+        max-width: 250px;
+        height: 40px;
+}
