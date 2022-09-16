@@ -111,7 +111,7 @@ body {
   flex-direction: column;
 }
 .acces__logo {
-  background: url("assets/images/icon-access-anywhere.svg") center/contain no-repeat;
+  background: url("./assets/images/icon-access-anywhere.svg") center/contain no-repeat;
   margin: 50px 0 20px 0;
 }
 .acces__title {
@@ -130,7 +130,7 @@ body {
   flex-direction: column;
 }
 .security__logo {
-  background: url("assets/images/icon-security.svg") center/contain no-repeat;
+  background: url("./assets/images/icon-security.svg") center/contain no-repeat;
   margin: 50px 0 20px 0;
 }
 .security__title {
@@ -149,7 +149,7 @@ body {
   flex-direction: column;
 }
 .collaboration__logo {
-  background: url("assets/images/icon-collaboration.svg") center/contain no-repeat;
+  background: url("./assets/images/icon-collaboration.svg") center/contain no-repeat;
   margin: 50px 0 20px 0;
 }
 .collaboration__title {
@@ -168,7 +168,7 @@ body {
   flex-direction: column;
 }
 .storage__logo {
-  background: url("assets/images/icon-any-file.svg") center/contain no-repeat;
+  background: url("./assets/images/icon-any-file.svg") center/contain no-repeat;
   margin: 50px 0 20px 0;
 }
 .storage__title {
