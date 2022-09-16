@@ -1,0 +1,14 @@
+.quotes  {
+    display: flex;
+    flex-direction: column;
+    @extend %centerFlex;
+    margin: 50px 0;
+    padding : 0 30px;
+    row-gap: 20px;
+}
+.quote  {
+    border: 1px solid black;
+    padding: 20px 20px 20px 10px;
+    text-align: left;
+    background-color: $dark-lighter-blue;
+}
