@@ -1,4 +1,5 @@
 .header  {
+    display: flex;
     @extend %centerFlex;
     flex-direction: column;
     &__nav {

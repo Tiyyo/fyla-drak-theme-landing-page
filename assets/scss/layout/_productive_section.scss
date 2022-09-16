@@ -4,7 +4,7 @@
     @extend %centerFlex;
 
     &__logo  {
-        background: url('assets/images/illustration-stay-productive.png') center/contain no-repeat;
+        background: url('/assets/images/illustration-stay-productive.png') center/contain no-repeat;
         height: 350px;
         width: 80%;
     }
@@ -34,7 +34,7 @@
         &::after  {
             content: "";
             position: absolute;
-            background: url('assets/images/icon-arrow.svg')center/contain no-repeat;
+            background: url('/assets/images/icon-arrow.svg')center/contain no-repeat;
             height: 1rem;
             width: 1rem;
             right: -18px;
