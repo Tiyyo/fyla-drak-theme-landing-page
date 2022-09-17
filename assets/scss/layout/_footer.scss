@@ -1,9 +1,11 @@
+.formandfooter{
+    position : relative;
+}
 .footer  {
+    position: absolute;
     display: flex;
     flex-direction: column;
     background-color: $Dark-blue-3;
-    position: absolute;
-    top: 2800px;
     z-index: -1;
     padding: 200px 25px 0 25px;
     text-align: left;
