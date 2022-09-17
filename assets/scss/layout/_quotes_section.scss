@@ -1,5 +1,4 @@
 .quotes  {
-    display: flex;
     flex-direction: column;
     @extend %centerFlex;
     margin: 50px 0;
@@ -23,7 +22,7 @@
     &::before  {
         content: "";
         position: absolute;
-        background: url("/assets/images/bg-quotes.png") center/contain no-repeat;
+        background: url("../images/bg-quotes.png") center/contain no-repeat;
         color: $cyan;
         height: 18px;
         width: 50px;
@@ -54,11 +53,11 @@
     }
 }
 .avatar--1{
-    background : url("/assets/images/profile-1.jpg") center/cover no-repeat;
+    background : url("../images/profile-1.jpg") center/cover no-repeat;
 }
 .avatar--2{
-    background : url("/assets/images/profile-2.jpg") center/cover no-repeat;
+    background : url("../images/profile-2.jpg") center/cover no-repeat;
 }
 .avatar--3{
-    background : url("/assets/images/profile-3.jpg") center/cover no-repeat;
+    background : url("../images/profile-3.jpg") center/cover no-repeat;
 }

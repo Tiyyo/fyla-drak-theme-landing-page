@@ -1,0 +1,42 @@
+.form  {
+    position: relative;
+    @extend %centerFlex;
+    flex-direction: column;
+    background-color: $Dark-blue-1;
+    border-radius: 10px;
+    margin: 0 20px;
+    padding: 30px 30px;
+    row-gap: 10px;
+
+    &__title  {
+        @include subTitle;
+    }
+    &__description  {
+        @include descriptionTxt;
+    }
+    &__input--email  {
+        width:  100%;
+        height: 45px;
+        border-radius: 50px;
+        border: 0;
+        max-width: 300px;
+        &::placeholder{
+           padding-left: 30px;
+           font-size: 0.6rem;
+           color: rgba(22, 22, 22, 0.311);
+      }
+    }
+    &__error{
+        margin: 0;
+        opacity: 1;
+        font-weight: 700;
+        color: $light-red;
+        
+    }
+    &__button  {
+        position: relative;
+        width: 100%;
+        max-width: 300px;
+        @include button;
+    }
+}

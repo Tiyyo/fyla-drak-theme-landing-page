@@ -1,5 +1,4 @@
 .header  {
-    display: flex;
     @extend %centerFlex;
     flex-direction: column;
     &__nav {
@@ -29,6 +28,7 @@
     &__button  {
         @include button;
         width: 60%;
+        max-width: 250px;
 
     }
 }
@@ -40,6 +40,7 @@
     }
 
     &__links  {
+        position: relative;
         display: flex;
         justify-content: flex-end;
         column-gap: 20px;
@@ -48,5 +49,27 @@
         font-size: 0.7rem;
         font-weight: 400;
 
+        li  {
+            &::before  {
+            
+            content: "";
+            position: absolute;
+            display: block;
+            height: 1px;
+            width: 0;
+            top : 15px;
+            background : $cyan;
+            transition:width 0.5s ;
+
+            }
+
+            &:hover{     
+                color: $cyan;
+
+                &::before  {
+                    width: 3%;
+                }
+            }
+        }
     }
 }
