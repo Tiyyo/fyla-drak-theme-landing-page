@@ -374,7 +374,7 @@ body {
 }
 .form__error {
   margin: 0;
-  opacity: 1;
+  opacity: 0;
   font-weight: 700;
   color: hsl(0deg, 100%, 63%);
 }
