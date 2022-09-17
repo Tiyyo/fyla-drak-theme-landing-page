@@ -1,19 +1,20 @@
 function emailValidation() {
-  const inputEmail = document.querySelector(".email");
-  const mailformat = new RegExp(
-    /^[A-Za-z0-9_!#$%&'*+\/=?`{|}~^.-]+@[A-Za-z0-9.-]+$/,
-    "gm"
-  );
-  const errorAlert = document.querySelector(".form__error");
-  console.log(errorAlert);
+  let form = document.forms["early_acces_request"];
 
-  console.log(inputEmail);
-  inputEmail.addEventListener("input", (e) => {
-    console.log(e.target.value);
-    if (e.target.value.match.mailFormat) {
-      return "";
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    let error = document.querySelector(".form__error");
+    const email = form[0].value;
+    let validRegex =
+      /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-] +)*$/;
+
+    if (email.match(validRegex)) {
+      alert("Email sent !!");
+      error.style.opacity = "0";
     } else {
-      errorAlert.style.opacity = "1";
+      alert("This is not a email adress");
+      error.style.opacity = "1";
     }
   });
 }

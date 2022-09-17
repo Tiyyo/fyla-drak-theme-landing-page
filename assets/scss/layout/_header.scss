@@ -1,11 +1,27 @@
 .header  {
+    background: url('../images/bg-curvy-mobile.svg') center/cover no-repeat $Dark-blue-1;
+    background-position-y: 300px;
+    background-position-x: -700px;
+
     @extend %centerFlex;
     flex-direction: column;
+
+    @include respond-to ('extra-large')  {
+        background: url('../images/bg-curvy-desktop.svg') center/cover no-repeat $Dark-blue-1;
+        background-position-y: 280px;
+        background-position-x: -400px;
+    }
     &__nav {
         display: flex;
         justify-content: space-between;
         padding: 0 15px;
         margin: 20px 0 40px 0;
+        width: 100%;
+
+        @include respond-to ('small')  {
+            width: 90%;
+        }
+    
     }
 
     &__logo  {
@@ -13,6 +29,7 @@
     }
 
     &__title  {
+        max-width: 550px;
         font-size: 1.5rem;
         line-height: 2.3rem;
         padding: 0 25px;
@@ -21,6 +38,7 @@
 
     &__description  {
         @include descriptionTxt;
+        max-width: 750px;
         padding: 0 25px;
         margin: 0 0 25px 0;
     }
@@ -43,11 +61,20 @@
         position: relative;
         display: flex;
         justify-content: flex-end;
+        align-items: center;
         column-gap: 20px;
         width: 50%;
         flex-grow: 2;
         font-size: 0.7rem;
         font-weight: 400;
+
+        @include respond-to ('medium')  {
+            font-size : 0.9rem ;
+        }
+
+        @include respond-to ('large')  {
+            font-size : 1.4rem ;
+        }
 
         li  {
             &::before  {
@@ -57,9 +84,24 @@
             display: block;
             height: 1px;
             width: 0;
-            top : 15px;
+            top : 25px;
             background : $cyan;
             transition:width 0.5s ;
+
+            @include respond-to ('small')  {
+                top: 35px;
+            }
+
+            @include respond-to ('medium')  {
+                top: 50px;
+            }
+    
+            @include respond-to ('large')  {
+                
+            }
+            @include respond-to ('extra-large')  {
+                
+            }  
 
             }
 

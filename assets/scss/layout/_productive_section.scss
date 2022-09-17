@@ -2,6 +2,11 @@
     flex-direction: column;
     @extend %centerFlex;
 
+    @include respond-to ('medium')  {
+        flex-direction: row;
+        margin: 0 auto;
+        width: 80%;
+    }
     &__logo  {
         background: url('../images/illustration-stay-productive.png') center/contain no-repeat;
         height: 350px;
